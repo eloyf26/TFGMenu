@@ -1,0 +1,13 @@
+FALTA
+	[x] Escribir guía de cómo instalar y usar
+	[ ] Escribir 10 proyectos (y copiar ese input.txt a Debug\ para que en VS funcione)
+	[ ] Comentar mejor, explicar por qué he hecho cada cosa, y por qué es diferente alguna cosa (sobre todo "non value" -> NULL pointer)
+
+A NO OLVIDAR
+  Para que el VS lea el input desde el fichero en "MyFiles", he hecho esto:
+	- En "Project\Evaluation Project Properties"
+	- Configuration: "All configurations" (para que no dependa de si 64/32, Debug o no, etc.)
+	- Configuration properties - Debuggingn - Working directory - browse
+	- OK
+
+
