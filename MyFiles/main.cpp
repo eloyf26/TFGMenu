@@ -80,7 +80,7 @@ int main( /* int argc, char** argv */ ){
 					oStudent.setNIA("");
 					cout << "Would you like to add a student to the project?(Y/N)\n";
 					getline(cin, answer);
-					if ("Y" == answer or "y" == answer) {
+					if ("Y" == answer || "y" == answer) {
 						cout << "Introduce the firstname:\n";
 						getline(cin, sTmp);
 						oStudent.setFirst_name(sTmp);
@@ -133,9 +133,11 @@ int main( /* int argc, char** argv */ ){
 			case 15:
 				cout<<"Do you want to delete all the saved projects? (Y/N)";
 				getline(cin,answer);
-				if (answer=="Y" and answer=="y")
-				oFDPCollection.deleteAll();	
-				cout << "Done!" << endl;
+				if (answer=="Y" || answer=="y"){
+					oFDPCollection.deleteAll();	
+					cout << "Done!" << endl;
+				}
+				
 			break;
 			//Director options
 			case 21:

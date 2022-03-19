@@ -112,7 +112,7 @@ class FDP{
 		void removeDirector (string firstName,string lastName){
 			bool succes=false;
 			for (unsigned int i=0;i<list_of_directors.size();i++){
-				if (!(firstName.compare(list_of_directors[i]->getFirst_name())) and !(lastName.compare(list_of_directors[i]->getLast_name())))
+				if (!(firstName.compare(list_of_directors[i]->getFirst_name())) && !(lastName.compare(list_of_directors[i]->getLast_name())))
 					list_of_directors.erase(list_of_directors.begin()+i);
 					succes=true;
 			}

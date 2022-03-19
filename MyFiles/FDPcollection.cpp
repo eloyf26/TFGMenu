@@ -38,7 +38,7 @@ class FDPCollection{
 			
 			for (unsigned int i = 0; i < vpDirectors.size(); i++) {
 				if (first.compare(vpDirectors[i]->getFirst_name()) == 0 
-					and last.compare(vpDirectors[i]->getLast_name()) == 0) {
+					&& last.compare(vpDirectors[i]->getLast_name()) == 0) {
 					
 					return vpDirectors[i];
 				}
@@ -102,7 +102,7 @@ class FDPCollection{
 			// This function is needed to find a FDP given the student
 			for (unsigned int i = 0; i < vpFDPs.size(); i++) {
 				Student* ptracces = vpFDPs[i]->getpStudent();
-				if (!(ptracces->getLast_name().compare(lastName)) and !(ptracces->getFirst_name().compare(firstName))) {
+				if (!(ptracces->getLast_name().compare(lastName)) && !(ptracces->getFirst_name().compare(firstName))) {
 					return vpFDPs[i];
 				}
 			}
